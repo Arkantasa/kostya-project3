@@ -24,15 +24,15 @@ function shuffle(array) {
  * Create a list that holds all of your cards
  */
 
- let allCards = ["fa-diamond", "fa-diamond", "fa-paper-plane-o", "fa-paper-plane-o", "fa-anchor", "fa-anchor",
-           "fa-bolt", "fa-bolt", "fa-cube", "fa-cube", "fa-leaf", "fa-leaf",
-           "fa-bicycle", "fa-bicycle", "fa-bomb", "fa-bomb"];
-
+ const allCards = ["fa-diamond", , "fa-paper-plane-o", "fa-anchor",
+                  "fa-bolt", "fa-cube", "fa-leaf",
+                  "fa-bicycle", "fa-bomb"];
+const doubledArray = allCards.concat(allCards);
 
 
 // variables
-let open = [];
-let modal = $("#winnerModal");
+const open = [];
+const modal = $("#winnerModal");
 let matchingCards = 0;
 let countingCards = 0;
 let threeStars = 14;
